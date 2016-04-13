@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+     >
+
+    <RelativeLayout
+        android:id="@+id/_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ly_gvMain"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" 
+            >
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="visible" >
+            </ImageView>
+
+            <WebView
+                android:id="@+id/itemWebview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"  
+                android:focusable="false"  
+                android:clickable="false"     
+                android:background="#00000000" >
+            </WebView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_width="fill_parent"
+            android:layout_height="14dip"
+            android:layout_alignBottom="@+id/ly_gvMain"
+            android:background="#7F7F7F"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/_layout"
+        android:focusable="true"
+        android:layout_alignTop="@id/_layout" >
+   </TextView> -->
+
+</RelativeLayout>
