@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<epaylinks.new_wallet.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.macair.drawviewdemo.com.hzb.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/griditems_bg"
      >
 
     <LinearLayout
@@ -37,4 +38,4 @@
         android:visibility="gone" >
     </ImageView>
 
-</epaylinks.new_wallet.view.SquareLayout>
+</com.example.macair.drawviewdemo.com.hzb.view.SquareLayout>
